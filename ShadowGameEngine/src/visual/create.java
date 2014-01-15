@@ -3,24 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//hey dustin, remember to make a New game, Load Game, Customize buttons.
-//new game won't open anything at the moment but later will call a class
-//load game will bring up a scoll menu similar to the contents of a folder
-//then load game will have 2 buttons under that that say "load" and "back".
-//customize will close our program, and open a config.txt in a notepad menu.
-//Thanks!
+
 package visual;
 
 /**
  *
- * @author Joshua 
+ * @author Joshua
  */
-public class menu extends javax.swing.JFrame {
+public class create extends javax.swing.JFrame {
 
     /**
-     * Creates new form menu
+     * Creates new form create
      */
-    public menu() {
+    public create() {
         initComponents();
     }
 
@@ -66,20 +61,20 @@ public class menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(create.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(create.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(create.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(create.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new menu().setVisible(true);
+                new create().setVisible(true);
             }
         });
     }

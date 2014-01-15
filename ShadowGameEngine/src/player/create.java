@@ -4,10 +4,16 @@
  * and open the template in the editor.
  */
 
+package player;
+
+import visual.create;
 /**
- *
+ * todo - import variable from visual.create
  * @author Joshua
  */
-public class hostile {
+public class create {
+    String name = visual.create.name();
+ 
+    
     
 }
