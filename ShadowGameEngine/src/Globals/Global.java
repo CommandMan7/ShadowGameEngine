@@ -1,4 +1,4 @@
-package Gloabls;
+package Globals;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,6 +12,6 @@ package Gloabls;
  */
 public class Global {
     public static String Name;
-    public static String Gender;
+    public static int Gender; //Male = 0 Femail = 1
     
 }

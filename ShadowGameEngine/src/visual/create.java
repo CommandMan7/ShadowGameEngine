@@ -5,7 +5,7 @@
  */
 
 package visual;
-import Gloabls.Global;
+import Globals.Global;
 
 
 /**
@@ -31,6 +31,8 @@ public class create extends javax.swing.JFrame {
     private void initComponents() {
 
         Name = new javax.swing.JTextField();
+        Talk = new javax.swing.JLabel();
+        Gender = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,13 +46,26 @@ public class create extends javax.swing.JFrame {
             }
         });
 
+        Talk.setName("Talk"); // NOI18N
+
+        Gender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Femail" }));
+        Gender.setName("Gender"); // NOI18N
+        Gender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GenderActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Name, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Name)
+                    .addComponent(Talk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Gender, 0, 380, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -58,10 +73,15 @@ public class create extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Name, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
+                .addComponent(Talk, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         Name.getAccessibleContext().setAccessibleName("Name");
+        Gender.getAccessibleContext().setAccessibleName("Gender");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -70,12 +90,20 @@ public class create extends javax.swing.JFrame {
         // TODO add your handling code here:
         int Key = evt.getKeyCode();
         if(Key == 10){
-            Global.Name = Name.getText();
-        }else
+        Global.Name = Name.getText();
+        
+        
+        }
             
         
         
     }//GEN-LAST:event_NameKeyPressed
+
+    private void GenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenderActionPerformed
+        // TODO add your handling code here:
+        Global.Gender = Gender.getSelectedIndex();
+        System.out.println(Global.Gender);
+    }//GEN-LAST:event_GenderActionPerformed
 
     /**
      * @param args the command line arguments
@@ -113,6 +141,8 @@ public class create extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox Gender;
     private javax.swing.JTextField Name;
+    private javax.swing.JLabel Talk;
     // End of variables declaration//GEN-END:variables
 }

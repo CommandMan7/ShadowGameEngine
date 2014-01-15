@@ -23,9 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="Name" pref="380" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Name" max="32767" attributes="0"/>
+                  <Component id="Talk" max="32767" attributes="0"/>
+                  <Component id="Gender" alignment="0" pref="380" max="32767" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -35,7 +39,11 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Name" min="-2" pref="31" max="-2" attributes="0"/>
-              <EmptySpace pref="258" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Gender" min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace pref="178" max="32767" attributes="0"/>
+              <Component id="Talk" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -53,6 +61,28 @@
       </AccessibilityProperties>
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="NameKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Talk">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Talk" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="Gender">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Male"/>
+            <StringItem index="1" value="Femail"/>
+          </StringArray>
+        </Property>
+        <Property name="name" type="java.lang.String" value="Gender" noResource="true"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Gender"/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GenderActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
