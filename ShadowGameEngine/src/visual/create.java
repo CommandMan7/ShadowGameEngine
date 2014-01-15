@@ -65,7 +65,7 @@ public class create extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Name)
                     .addComponent(Talk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Gender, 0, 380, Short.MAX_VALUE))
+                    .addComponent(Gender, 0, 381, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -101,8 +101,8 @@ public class create extends javax.swing.JFrame {
 
     private void GenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenderActionPerformed
         // TODO add your handling code here:
-        Global.Gender = Gender.getSelectedIndex();
-        System.out.println(Global.Gender);
+        Globals.Global.Gender = Gender.getSelectedItem();
+        System.out.println(Globals.Global.Gender);
     }//GEN-LAST:event_GenderActionPerformed
 
     /**

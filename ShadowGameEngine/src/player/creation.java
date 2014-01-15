@@ -7,17 +7,28 @@
 package player;
 
 //import visual.create;
+
+import Globals.Global.*;
+
 /**
  * 
  * @author Joshua
  */
 public class creation {
     String Name = Globals.Global.Name;
-    Integer Gender = Globals.Global.Gender;
+    Object Gender = Globals.Global.Gender;
+    public void gender(){
+    if(Gender == "male"){
+    
+        
+        
+    }
 }
-    if();
+ 
+}
+    
     
  
     
     
-}
+

@@ -12,6 +12,6 @@ package Globals;
  */
 public class Global {
     public static String Name;
-    public static int Gender; //Male = 0 Femail = 1
+    public static Object Gender ; //Male = 0 Femail = 1
     
 }
