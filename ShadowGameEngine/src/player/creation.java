@@ -8,11 +8,15 @@ package player;
 
 //import visual.create;
 /**
- * todo - import variable from visual.create
+ * 
  * @author Joshua
  */
-public class create {
-    //String name = visual.create.name();
+public class creation {
+    String Name = Globals.Global.Name;
+    Integer Gender = Globals.Global.Gender;
+}
+    if();
+    
  
     
     

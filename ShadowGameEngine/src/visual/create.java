@@ -5,7 +5,7 @@
  */
 
 package visual;
-import Gloabls.Global;
+import Globals.Global;
 
 
 /**
