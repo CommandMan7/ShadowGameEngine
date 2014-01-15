@@ -5,6 +5,8 @@
  */
 
 package visual;
+import Gloabls.Global;
+
 
 /**
  *
@@ -28,21 +30,52 @@ public class create extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Name = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Name.setText("Name");
+        Name.setToolTipText("Enter Name here");
+        Name.setName("Name"); // NOI18N
+        Name.setSelectionStart(0);
+        Name.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                NameKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Name, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Name, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(258, Short.MAX_VALUE))
         );
+
+        Name.getAccessibleContext().setAccessibleName("Name");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void NameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NameKeyPressed
+        // TODO add your handling code here:
+        int Key = evt.getKeyCode();
+        if(Key == 10){
+            Global.Name = Name.getText();
+        }else
+            
+        
+        
+    }//GEN-LAST:event_NameKeyPressed
 
     /**
      * @param args the command line arguments
@@ -80,5 +113,6 @@ public class create extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Name;
     // End of variables declaration//GEN-END:variables
 }

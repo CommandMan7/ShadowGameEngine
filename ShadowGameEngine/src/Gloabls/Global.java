@@ -1,19 +1,17 @@
+package Gloabls;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package player;
-
-//import visual.create;
+  
 /**
- * todo - import variable from visual.create
- * @author Joshua
+ *
+ * @author newma_000
  */
-public class create {
-    //String name = visual.create.name();
- 
-    
+public class Global {
+    public static String Name;
+    public static String Gender;
     
 }
