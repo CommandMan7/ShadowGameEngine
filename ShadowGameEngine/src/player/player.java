@@ -1,15 +1,6 @@
 package player;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import Globals.Global.*;
-/**
- *
- * @author Joshua
- */
 public class player {
     Object Gender = Globals.Global.Gender;
     String Name = Globals.Global.Name;
@@ -28,6 +19,14 @@ public class player {
     Double DefenseDiv = Globals.Global.DefenseDiv;
     Double DefenseAdd = Globals.Global.DefenseAdd;
     Double DefenseSub = Globals.Global.DefenseSub;
+    public void events(){
+        statupdate();
+    }
+    public void statupdate(){
+        healthmod();
+        attackmod();
+        defensemod();
+    }
     public void healthmod(){
         Health = Health * HealthMult;
         Health = Health / HealthDiv;
