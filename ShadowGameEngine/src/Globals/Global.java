@@ -27,6 +27,6 @@ public class Global {
     public static Double DefenseMult;
     public static Double DefenseDiv;
     public static Double DefenseAdd;
-    public static Double DefenseAddSub;
+    public static Double DefenseSub;
     
 }
