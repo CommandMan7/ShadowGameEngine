@@ -19,7 +19,7 @@ public class player {
     Double DefenseDiv = Globals.Global.DefenseDiv;
     Double DefenseAdd = Globals.Global.DefenseAdd;
     Double DefenseSub = Globals.Global.DefenseSub;
-    Double posmov = Globals.Global.posmov;
+    Integer posmov = Globals.Global.posmov;
     public void events(){
         statupdate();
     }
@@ -46,13 +46,11 @@ public class player {
         Defense = Defense + DefenseAdd;
         Defense = Defense - DefenseSub;
         }
-    public void movement(keynum e){
-        int key = e.getID();
-        if(key == keynum.KEY_TYPED){
-            char posmov = e.getKeyChar();
+    public void movement(){
+        system.out.println(posmov);
             
         }
-            
+    public static
         
         
             
