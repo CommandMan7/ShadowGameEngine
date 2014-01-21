@@ -53,6 +53,7 @@ public class Game extends javax.swing.JFrame {
         // TODO add your handling code here:
         Globals.Global.posmov = evt.getKeyCode();
         
+        
     }//GEN-LAST:event_formKeyPressed
 
     /**
