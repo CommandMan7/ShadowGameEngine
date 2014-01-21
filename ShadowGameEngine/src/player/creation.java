@@ -18,7 +18,7 @@ public class creation {
     String Name = Globals.Global.Name;
     Object Gender = Globals.Global.Gender;
     public void gender(){
-    if(Gender == "male"){
+        if(Gender == "male"){
     
         
         

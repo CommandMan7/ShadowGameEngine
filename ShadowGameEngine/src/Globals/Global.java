@@ -28,6 +28,6 @@ public class Global {
     public static Double DefenseDiv;
     public static Double DefenseAdd;
     public static Double DefenseSub;
-    public static Character posmov;
+    public static int posmov;
     
 }
